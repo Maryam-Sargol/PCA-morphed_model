@@ -18,8 +18,8 @@ def desired_STD(coefficients: np.array, # PCA-coefficients
     modified_data_with_pos_std =  pca_mean + k * score_std   *  coefficients[:,pca_index]  
     modified_data_with_neg_std =  pca_mean - k * score_std  *  coefficients[:,pca_index]
     modified_data_without_std =  pca_mean
-    """Here, μ represents the mean vector of the original data, k is a scaling factor, and STD is the standard deviation of
-      the transformed data for the chosen principal component. Coeff represents the coefficient corresponding to 
+    """pca_mean represents the mean vector of the original data, k is a scaling factor, and score_std is the standard deviation of
+      the transformed data for the chosen principal component. Coefficients represents the coefficient corresponding to 
       the selected principal component. Size of each variable is:
       coefficients : (No of components, No of features),
       pca_mean: (No of features),
