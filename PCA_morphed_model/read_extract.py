@@ -17,9 +17,8 @@ def read_extract_nodes_shells(input_dir:str  ):  # input directory
     
     all_morphed_file_pathes = [f for f in glob.glob(os.path.join(input_dir, "*")) if os.path.isfile(f)]     # All files (excluding folders)
 
-
     # extract the cordinates of nodes of all morphed files
-    nodes_all_morphed_files = []
+    nodes_all_morphed_files = np.empty(0)
     shells = np.empty(0)
     id_nodes = []
 
