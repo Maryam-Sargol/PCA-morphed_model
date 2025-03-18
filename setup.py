@@ -28,6 +28,10 @@ requirements = shlex.split(cfg.get('requirements', ''))
 if cfg.get('pip_requirements'): requirements += shlex.split(cfg.get('pip_requirements', ''))
 if 'numpy' not in requirements:
     requirements.append('numpy')
+if 'trimesh' not in requirements:
+    requirements.append('trimesh')
+if 'matplotlib' not in requirements:
+    requirements.append('matplotlib')
 min_python = cfg['min_python']
 lic = licenses.get(cfg['license'].lower(), (cfg['license'], None))
 dev_requirements = (cfg.get('dev_requirements') or '').split()
