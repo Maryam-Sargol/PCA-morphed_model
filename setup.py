@@ -32,6 +32,8 @@ if 'trimesh' not in requirements:
     requirements.append('trimesh')
 if 'matplotlib' not in requirements:
     requirements.append('matplotlib')
+if 'scikit-learn' not in requirements:
+    requirements.append('scikit-learn')
 min_python = cfg['min_python']
 lic = licenses.get(cfg['license'].lower(), (cfg['license'], None))
 dev_requirements = (cfg.get('dev_requirements') or '').split()
