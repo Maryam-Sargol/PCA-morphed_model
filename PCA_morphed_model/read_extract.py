@@ -18,9 +18,10 @@ def read_extract_nodes_shells(input_dir:str  ):  # input directory
     all_morphed_file_pathes = [f for f in glob.glob(os.path.join(input_dir, "*")) if os.path.isfile(f)]     # All files (excluding folders)
 
     # extract the cordinates of nodes of all morphed files
-    nodes_all_morphed_files = np.empty(0)
+    nodes_all_morphed_files = []
     shells = np.empty(0)
     id_nodes = []
+    data_array = np.empty(0)
 
     if all_morphed_file_pathes != []:
         for file_path in all_morphed_file_pathes:
@@ -34,7 +35,7 @@ def read_extract_nodes_shells(input_dir:str  ):  # input directory
         file_extension = extract_nodes_shells_mix_stl_key(all_morphed_file_pathes[-1])[2]
         print(f"{len(all_morphed_file_pathes)} {file_extension} files were read")
         shells = extract_nodes_shells_mix_stl_key(all_morphed_file_pathes[-1])[1]
-    
-    data_array = np.array(nodes_all_morphed_files) 
+        data_array = np.array(nodes_all_morphed_files) 
+        
     return data_array, shells, id_nodes
     
