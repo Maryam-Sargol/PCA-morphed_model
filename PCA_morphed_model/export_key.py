@@ -3,10 +3,10 @@
 # %% auto 0
 __all__ = ['export_key_file']
 
-# %% ../nbs/04_export_key.ipynb 1
+# %% ../nbs/04_export_key.ipynb 2
 import numpy as np
 
-# %% ../nbs/04_export_key.ipynb 2
+# %% ../nbs/04_export_key.ipynb 3
 def export_key_file(coordinates: list[list[float]] , #coordinates of nodes
                     shells_array: np.array, #shells of morphed model, each shell enclosed by nodes
                     id_nodes: list[int], # id of nodes of morphed model

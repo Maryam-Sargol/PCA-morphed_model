@@ -3,14 +3,14 @@
 # %% auto 0
 __all__ = ['export_file']
 
-# %% ../nbs/05_export_file_mix.ipynb 1
+# %% ../nbs/05_export_file_mix.ipynb 2
 import trimesh
 from .export_key import export_key_file
 import numpy as np
 import glob
 import os
 
-# %% ../nbs/05_export_file_mix.ipynb 2
+# %% ../nbs/05_export_file_mix.ipynb 3
 def export_file (input_dir: str, # input directory
                 output_dir: str, # output directory
                 coordinates_pos: list[list[float]], #new coordinates with positive k.std 

@@ -3,7 +3,7 @@
 # %% auto 0
 __all__ = ['read_extract_nodes_shells']
 
-# %% ../nbs/01_read_extract.ipynb 1
+# %% ../nbs/01_read_extract.ipynb 2
 import glob
 import os
 import numpy as np
@@ -11,7 +11,7 @@ from .extract_NSH_stl_key import extract_nodes_shells_mix_stl_key
 
 
 
-# %% ../nbs/01_read_extract.ipynb 2
+# %% ../nbs/01_read_extract.ipynb 3
 def read_extract_nodes_shells(input_dir:str  ):  # input directory
     """Reads STL or KEY files from a directory and extracts node coordinates and shell elements."""
     

@@ -3,34 +3,34 @@
 # %% auto 0
 __all__ = ['input_dir', 'output_dir', 'data_array', 'shells', 'id_nodes', 'pca_index', 'k']
 
-# %% ../nbs/06_main_pca.ipynb 1
+# %% ../nbs/06_main_pca.ipynb 2
 from .read_extract import read_extract_nodes_shells
 from .pca import run_PCA 
 from .STD import desired_STD
 from .export_file_mix import export_file
 import numpy as np
 
-# %% ../nbs/06_main_pca.ipynb 2
+# %% ../nbs/06_main_pca.ipynb 3
 #input_dir = './geometry_data_example'     # there are .key files
 input_dir = './geometry_data_example/triangular_morphed_models'       # there are .stl files
 output_dir = './result'
 
 
-# %% ../nbs/06_main_pca.ipynb 3
+# %% ../nbs/06_main_pca.ipynb 4
 data_array, shells, id_nodes = read_extract_nodes_shells(input_dir)
 
-# %% ../nbs/06_main_pca.ipynb 4
+# %% ../nbs/06_main_pca.ipynb 5
 # run pca
 if data_array.size > 0:
     coefficients,scores, explained_variance, pca_mean= run_PCA(data_array)
 
-# %% ../nbs/06_main_pca.ipynb 5
+# %% ../nbs/06_main_pca.ipynb 6
 # apply desired standard deviations
 pca_index = 0  # PCA1
 k = 3  # Number of standard deviations
 if data_array.size > 0:
     coordinates_pos, coordinates_neg, coordinates_mean = desired_STD(coefficients, pca_mean, scores, pca_index, k )
 
-# %% ../nbs/06_main_pca.ipynb 6
+# %% ../nbs/06_main_pca.ipynb 7
 if data_array.size > 0:
     mesh_pos, mesh_neg, mesh_mean = export_file (input_dir,output_dir, coordinates_pos, coordinates_neg, coordinates_mean , shells, id_nodes,k)

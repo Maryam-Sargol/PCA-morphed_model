@@ -3,10 +3,10 @@
 # %% auto 0
 __all__ = ['desired_STD']
 
-# %% ../nbs/03_STD.ipynb 1
+# %% ../nbs/03_STD.ipynb 2
 import numpy as np
 
-# %% ../nbs/03_STD.ipynb 2
+# %% ../nbs/03_STD.ipynb 3
 def desired_STD(coefficients: np.array, # PCA-coefficients
                  pca_mean: np.array, # PCA-mean
                  scores: np.array,  # PCA-scores

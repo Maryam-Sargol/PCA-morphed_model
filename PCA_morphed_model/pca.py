@@ -3,14 +3,14 @@
 # %% auto 0
 __all__ = ['run_PCA']
 
-# %% ../nbs/02_pca.ipynb 1
+# %% ../nbs/02_pca.ipynb 2
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
 
-# %% ../nbs/02_pca.ipynb 2
+# %% ../nbs/02_pca.ipynb 3
 def run_PCA (data_array: np.array ):  # array containing coordinates of nodes
 
     """ runs PCA, steps: 

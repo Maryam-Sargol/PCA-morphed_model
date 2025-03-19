@@ -3,12 +3,12 @@
 # %% auto 0
 __all__ = ['extract_nodes_shells_mix_stl_key']
 
-# %% ../nbs/00_extract_NSH_stl_key.ipynb 1
+# %% ../nbs/00_extract_NSH_stl_key.ipynb 2
 import numpy as np
 import os
 import trimesh
 
-# %% ../nbs/00_extract_NSH_stl_key.ipynb 2
+# %% ../nbs/00_extract_NSH_stl_key.ipynb 3
 def extract_nodes_shells_mix_stl_key (file_path : str): # path of morphed files
     """ extracts nodes and shells from given files, only .stl and .key files are accepted """
 
