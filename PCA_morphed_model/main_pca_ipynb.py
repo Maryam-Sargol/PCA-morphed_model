@@ -22,7 +22,7 @@ data_array, shells, id_nodes = read_extract_nodes_shells(input_dir)
 
 # %% ../nbs/06_main_pca.ipynb 4
 # run pca
-if data_array != np.array([]):
+if data_array.size > 0:
     coefficients,scores, explained_variance, pca_mean= run_PCA(data_array)
 
 # %% ../nbs/06_main_pca.ipynb 5
