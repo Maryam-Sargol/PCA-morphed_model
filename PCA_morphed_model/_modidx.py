@@ -12,7 +12,7 @@ d = { 'settings': { 'branch': 'main',
                                                                                                 'PCA_morphed_model/export_key.py')},
             'PCA_morphed_model.extract_NSH_stl_key': { 'PCA_morphed_model.extract_NSH_stl_key.extract_nodes_shells_mix_stl_key': ( 'extract_nsh_stl_key.html#extract_nodes_shells_mix_stl_key',
                                                                                                                                    'PCA_morphed_model/extract_NSH_stl_key.py')},
-            'PCA_morphed_model.main_pca_ipynb': {},
+            'PCA_morphed_model.main_pca': {},
             'PCA_morphed_model.pca': {'PCA_morphed_model.pca.run_PCA': ('pca.html#run_pca', 'PCA_morphed_model/pca.py')},
             'PCA_morphed_model.read_extract': { 'PCA_morphed_model.read_extract.read_extract_nodes_shells': ( 'read_extract.html#read_extract_nodes_shells',
                                                                                                               'PCA_morphed_model/read_extract.py')}}}
